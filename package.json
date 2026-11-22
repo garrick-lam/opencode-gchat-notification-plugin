@@ -1,5 +1,5 @@
 {
-  "name": "@garricklam/opencode-gchat-notification-plugin",
+  "name": "opencode-gchat-notification-plugin",
   "version": "1.0.1",
   "type": "module",
   "exports": {
