@@ -92,4 +92,3 @@ GitHub Actions trusted publishing (OIDC), so configure `garrick-lam/opencode-gch
 as a trusted publisher in the package's npm settings, with workflow
 `.github/workflows/ci.yml`. No `NPM_TOKEN` secret is needed.
 
-
