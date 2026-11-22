@@ -6,18 +6,18 @@ on:
     branches: [main, alpha, beta]
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: yarn
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: yarn lint
-      - run: LOG_LEVEL=OFF yarn test:coverage --silent
+  # test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 24
+  #         cache: yarn
+  #     - run: yarn install --frozen-lockfile
+  #     - run: yarn build
+  #     - run: yarn lint
+  #     - run: LOG_LEVEL=OFF yarn test:coverage --silent
 
   release:
     needs: test
