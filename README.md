@@ -87,6 +87,9 @@ export OPENCODE_GCHAT_WEBHOOK_URL="https://chat.googleapis.com/v1/spaces/…"
 export OPENCODE_GCHAT_TIMEZONE="Asia/Hong_Kong"
 ```
 
-Publishing is automated by semantic-release through GitHub Actions on the default branch.
+Publishing is automated by semantic-release through GitHub Actions. npm publishing uses
+GitHub Actions trusted publishing (OIDC), so configure `garrick-lam/opencode-gchat-notification-plugin`
+as a trusted publisher in the package's npm settings, with workflow
+`.github/workflows/ci.yml`. No `NPM_TOKEN` secret is needed.
 
 
