@@ -1,0 +1,5 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["coverage/**", "node_modules/**", ".opencode/**"],
+  "categories": { "correctness": "error", "suspicious": "warn" }
+}
